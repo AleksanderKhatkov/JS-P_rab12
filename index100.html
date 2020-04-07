@@ -1,0 +1,128 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Самостоятельная работа</title>
+</head>
+<body>
+    <p>Работа с объектами. Создание классов.</p>
+	<script>
+
+		class Manager {
+            constructor(name, surname, age, rate, days) {
+                this.name = name;
+                this.surname = surname;
+                this.age = age;
+                this.rate = rate;
+                this.days = days;
+            }
+
+            getName() {
+                return this.name;
+            }
+            setName(value) {
+                this.name = value;
+            }
+            getSurname() {
+                return this.surname;
+            }
+            setSurname(value) {
+                this.surname = value;
+            }
+                getAge() {
+                return this.age;
+            }
+                setAge(value) {
+                    this.age = value;
+            }
+                getRate() {
+                    return this.rate;
+            }
+                setRate(value) {
+                    this.rate = value;
+            }
+                getDays() {
+                    return this.days;
+            }
+                setDays(value) {
+                    this.days = value;
+            }
+                getSalary() {
+                    return this.days * this.rate;
+            }
+       }
+        var manager1 = new Manager("Дмитрий", "Курленко", 40, 50, 31);
+        var manager2 = new Manager("Дмитрий", "Делендик", 45, 30, 31);
+        var manager3 = new Manager("Евгений", "Купец", 32, 20, 30);
+        var manager4 = new Manager("Максим", "Навицкий", 35, 50, 31);
+        var manager5 = new Manager("Ольга", "Орловская", 24, 90, 31);
+
+            
+    document.write(" 1.  ");
+        document.write(manager1.name);
+        document.write(" :  ");
+        document.write(manager1.surname);
+        document.write(" :  ");
+        document.write(manager1.age);
+        document.write(" :  ");
+        document.write(manager1.rate);
+        document.write(" :  ");
+        document.write(manager1.days);
+        document.write(" :  ");
+    document.write(manager1.getSalary());
+
+    document.write(" 2.  ");
+        document.write(manager2.name);
+        document.write(" :  ");
+        document.write(manager2.surname);
+        document.write(" :  ");
+        document.write(manager2.age);
+        document.write(" :  ");
+        document.write(manager2.rate);
+        document.write(" :  ");
+        document.write(manager2.days);
+        document.write(" :  ");
+    document.write(manager2.getSalary());
+
+    document.write(" 3.  ");
+        document.write(manager3.name);
+        document.write(" :  ");
+        document.write(manager3.surname);
+        document.write(" :  ");
+        document.write(manager3.age);
+        document.write(" :  ");
+        document.write(manager3.rate);
+        document.write(" :  ");
+        document.write(manager3.days);
+        document.write(" :  ");
+        document.write(manager3.getSalary());
+
+    document.write(" 4.  ");
+        document.write(manager4.name);
+        document.write(" :  ");
+        document.write(manager4.surname);
+        document.write(" :  ");
+        document.write(manager4.age);
+        document.write(" :  ");
+        document.write(manager4.rate);
+        document.write(" :  ");
+        document.write(manager4.days);
+        document.write(" :  ");
+        document.write(manager4.getSalary());
+
+    document.write(" 5.  ");
+        document.write(manager5.name);
+        document.write(" :  ");
+        document.write(manager5.surname);
+        document.write(" :  ");
+        document.write(manager5.age);
+        document.write(" :  ");
+        document.write(manager5.rate);
+        document.write(" :  ");
+        document.write(manager5.days);
+        document.write(" :  ");
+    document.write(manager5.getSalary());
+
+    alert('Общая зарплата отдела: ' + (manager1.getSalary() + manager2.getSalary() + manager3.getSalary() + manager4.getSalary() + manager5.getSalary()));
+</script>
+</body>
+</html>
